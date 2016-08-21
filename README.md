@@ -6,7 +6,7 @@
 The branch `dotnet-core` uses [RabbitMQ's preview of `RabbitMQ.Client` 4.0.0](https://groups.google.com/forum/#!topic/rabbitmq-users/hyJLlXCbocY), which is built for `netstandard1.5` and `net451`. This means that `RawRabbit` now can run on any platform. To Install, first make sure that you have added [RabbitMq's AppVeyor Feed](https://ci.appveyor.com/nuget/rabbitmq-dotnet-client-ci) to your NuGet feeds, then run
 
 ```
-PM> Install-Package RawRabbit -Version 1.9.4-dotnetcore -Pre 
+PM> Install-Package RawRabbit -Version 1.9.4.1-dotnetcore -Pre 
 ```
 
 ## Quick introduction
