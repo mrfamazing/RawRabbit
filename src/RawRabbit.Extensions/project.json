@@ -1,6 +1,6 @@
 ﻿{
 	"title": "RawRabbit.Extensions",
-	"version": "1.9.4-dotnetcore",
+	"version": "1.9.4.1-dotnetcore",
 	"description": "Make the most of RawRabbit with these extensions",
 	"authors": [ "par.dahlman" ],
 	"packOptions": {
