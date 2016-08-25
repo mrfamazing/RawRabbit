@@ -5,6 +5,7 @@ using RawRabbit.Configuration.Exchange;
 using RawRabbit.IntegrationTests.TestMessages;
 using RawRabbit.vNext;
 using Xunit;
+using ExchangeType = RawRabbit.Configuration.Exchange.ExchangeType;
 
 namespace RawRabbit.IntegrationTests.SimpleUse
 {

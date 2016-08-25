@@ -6,6 +6,7 @@ using RawRabbit.Common;
 using RawRabbit.IntegrationTests.TestMessages;
 using RawRabbit.vNext;
 using Xunit;
+using RabbitMQ.Client;
 
 namespace RawRabbit.IntegrationTests.SimpleUse
 {

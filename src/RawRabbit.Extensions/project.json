@@ -1,26 +1,31 @@
 ﻿{
-	"title": "RawRabbit.Extensions",
-	"version": "1.9.4.1-dotnetcore",
-	"description": "Make the most of RawRabbit with these extensions",
-	"authors": [ "par.dahlman" ],
-	"packOptions": {
-		"iconUrl": "http://pardahlman.se/raw/icon.png",
-		"projectUrl": "https://github.com/pardahlman/RawRabbit",
-		"tags": [ "rabbitmq", "raw", "rawrabbit", "extensions" ],
-		"publishExclude": [ "**.xproj", "**.user", "**.vspscc" ]
-	},
+  "title": "RawRabbit.Extensions",
+  "version": "1.9.4.2-dotnetcore",
+  "description": "Make the most of RawRabbit with these extensions",
+  "authors": [ "par.dahlman" ],
+  "packOptions": {
+    "iconUrl": "http://pardahlman.se/raw/icon.png",
+    "projectUrl": "https://github.com/pardahlman/RawRabbit",
+    "tags": [ "rabbitmq", "raw", "rawrabbit", "extensions" ],
+    "publishExclude": [ "**.xproj", "**.user", "**.vspscc" ]
+  },
 
-	"dependencies": {
-		"RawRabbit": { "target": "project" },
-		"RawRabbit.vNext": { "target": "project" }
-	},
+  "dependencies": {
+    "RawRabbit": { "target": "project" },
+    "RawRabbit.vNext": { "target": "project" }
+  },
 
-	"frameworks": {
-		"netstandard1.5": {
-			"dependencies": {
-				"System.Net.Requests": "4.0.11"
-			}
-		},
-		"net451": {}
-	}
+  "frameworks": {
+    "netstandard1.5": {
+      "dependencies": {
+        "System.Net.Requests": "4.0.11"
+      }
+    },
+    "net451": {}
+  },
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --output ..\\..\\nugetpkgs --configuration %compile:Configuration% --version-suffix dev-build"
+    ]
+  }
 }

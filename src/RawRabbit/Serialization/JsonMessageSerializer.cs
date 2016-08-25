@@ -26,7 +26,7 @@ namespace RawRabbit.Serialization
 			string msgStr;
 			using (var sw = new StringWriter())
 			{
-				_serializer.Serialize(sw, obj);
+ 				_serializer.Serialize(sw, obj);
 				msgStr = sw.GetStringBuilder().ToString();
 			}
 			var msgBytes = Encoding.UTF8.GetBytes(msgStr);
